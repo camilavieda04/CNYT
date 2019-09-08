@@ -63,6 +63,7 @@ public class PruebasNumeroComplejo {
 		assertEquals(new Complejo(4.0,3.0),b.getConjugado());
 	}
 	
+	/*
 	@Test 
 	public void polarAcartesiano() {
 		double a = 2;
@@ -70,7 +71,7 @@ public class PruebasNumeroComplejo {
 		Complejo resp = Complejo.conversionPaC(a, b);
 		assertEquals(1.96,resp.getReal(),0.1);
 	}
-	
+	*/
 	@Test 
 	public void cartesianoApolar() {
 		Complejo a = new Complejo(4,-3);
