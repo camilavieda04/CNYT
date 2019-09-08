@@ -85,7 +85,34 @@ public class PruebasMatricesComplejas {
 		
 	}
 	
+	@Test 
+	public void inversaVector() {
+		LibreriaMatrizComplejo a= new LibreriaMatrizComplejo();
+		MatrizComplejo m1 = new MatrizComplejo(2,1);
+		m1.addComplejo(new Complejo(7,2), 0, 0);
+		m1.addComplejo(new Complejo(6,1),1,0);
+		
+		MatrizComplejo resp = new MatrizComplejo(2,1);
+		resp.addComplejo(new Complejo(-7, 2), 0,0);
+		resp.addComplejo(new Complejo(-6,-1), 1, 0);
+		
+		resp.equals(a.inversa(m1));
+		
+	}
 	
+	@Test 
+	public void productoEscalarV() {
+		LibreriaMatrizComplejo a = new LibreriaMatrizComplejo();
+		MatrizComplejo m1 = new MatrizComplejo(1,1);
+		m1.addComplejo(new Complejo(0,0), 0, 0);
+		
+		MatrizComplejo resp= new MatrizComplejo(2,2);
+		resp.addComplejo(new Complejo(0,0), 0, 0);
+		
+		resp.equals(a.productoEscalarMatriz(new Complejo(1,1), m1));
+	}
+
+
 	@Test 
 	public void productoEscalarM() {
 		LibreriaMatrizComplejo a =new LibreriaMatrizComplejo();
@@ -230,6 +257,24 @@ public class PruebasMatricesComplejas {
 		resp.addComplejo(new Complejo(0,0), 2, 2);
 		
 		resp.equals(a.adjunta(m1));
+	}
+	
+	@Test
+	public void inversaMatriz() {
+		LibreriaMatrizComplejo a = new LibreriaMatrizComplejo();
+		MatrizComplejo m1 = new MatrizComplejo(2,2);
+		m1.addComplejo(new Complejo(3,2), 0, 0);
+		m1.addComplejo(new Complejo(2,1), 0, 1);
+		m1.addComplejo(new Complejo(0,1), 1, 0);
+		m1.addComplejo(new Complejo(1,1), 1, 1);
+		
+		MatrizComplejo resp = new MatrizComplejo(2,2);
+		resp.addComplejo(new Complejo(-3,-2), 0, 0);
+		resp.addComplejo(new Complejo(-2,-1), 0, 1);
+		resp.addComplejo(new Complejo(0,-1), 1, 0);
+		resp.addComplejo(new Complejo(-1,-1), 1, 1);
+		
+		resp.equals(a.inversa(m1));
 	}
 	
 	

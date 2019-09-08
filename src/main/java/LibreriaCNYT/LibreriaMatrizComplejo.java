@@ -168,6 +168,20 @@ public class LibreriaMatrizComplejo {
 	
 	}
 	
+	/**
+	 * Matriz inversa de una matriz de numeros complejos
+	 * @param m1 matriz de numeros complejos
+	 * @return matrizInversa de una matriz m1 dada
+	 */
+	public static MatrizComplejo inversa(MatrizComplejo m1) {
+		MatrizComplejo inversa = new MatrizComplejo(m1.getFila(),m1.getColumna());
+		for(int i=0;i<inversa.getFila();i++) {
+			for(int j=0; j<inversa.getColumna();j++) {
+				inversa.getMatrizCompl()[i][j]= Complejo.getInverso(m1.getMatrizCompl()[i][j].getReal(), m1.getMatrizCompl()[i][j].getImag());
+			}
+		}
+		return inversa;
+	}
 	
 	
 	/**

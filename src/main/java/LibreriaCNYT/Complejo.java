@@ -72,6 +72,9 @@ public class Complejo {
 		return this;
 	}
 	
+	public static Complejo getInverso(double real, double imaginario) {
+		return new Complejo(real*(-1),imaginario*(-1));
+	}
 	/**
 	 * Retorna la fase del numero complejo
 	 * @return fase
