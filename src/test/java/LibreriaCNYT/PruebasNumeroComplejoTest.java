@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import org.junit.Test;
 
 
-public class PruebasNumeroComplejo {
+public class PruebasNumeroComplejoTest {
 	@Test
 	public void test() {
 	}
