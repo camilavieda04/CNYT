@@ -7,7 +7,7 @@ public class LibreriaMatrizComplejo {
 	
 	
 	/**
-	 * Sumar dos vectores de números complejos
+	 * Sumar dos vectores de numeros complejos
 	 * @param v1 vector de numeros complejos a sumar
 	 * @param v2 vector de numeros complejos a sumar
 	 * @return sumvectores resultado de la operacion realizada
@@ -25,7 +25,7 @@ public class LibreriaMatrizComplejo {
 			
 	
 	/**
-	 * Restar dos vectores de números complejos
+	 * Restar dos vectores de numeros complejos
 	 * @param v1 vector de numeros complejos a restar
 	 * @param v2 vector de numeros complejos a restst
 	 * @return resvectores resultado de la operacion realizada
@@ -43,7 +43,7 @@ public class LibreriaMatrizComplejo {
 	
 	
 	/**
-	 * Multiplicación de un escalar por un vector complejo
+	 * Multiplicacion de un escalar por un vector complejo
 	 * @param v1 vector de numeros complejos a multiplicar
 	 * @param a numero complejo a multiplicar
 	 * @return multev resultado de la operacion realizada
@@ -82,7 +82,7 @@ public class LibreriaMatrizComplejo {
 	
 	
 	/**
-	 * Sumar dos matrices de números complejos
+	 * Sumar dos matrices de numeros complejos
 	 * @param a Matriz de numeros complejos a sumar
 	 * @param b Matriz de numeros complejos a sumar 
 	 * @return sumMatrizComplejo resultado de la operacion realizada
@@ -148,10 +148,10 @@ public class LibreriaMatrizComplejo {
 	}
 	
 	/**
-	 * Multiplicación de dos matrices complejas
+	 * Multiplicacion de dos matrices complejas
 	 * @param m1 matriz de numeros complejos a multiplicar
 	 * @param m2 matriz de numeros complejos a multiplicar
-	 * @return multi resultado de la operación realizada.
+	 * @return multi resultado de la operacion realizada.
 	 */
 	public MatrizComplejo multiplicacionMatrices(MatrizComplejo m1, MatrizComplejo m2) {
 		MatrizComplejo multi = new MatrizComplejo(m1.getColumna(),m2.getFila());
@@ -331,7 +331,7 @@ public class LibreriaMatrizComplejo {
 	 * Calcular el producto tensor entre dos matrices
 	 * @param m1 matriz de numeros complejos
 	 * @param m2 matriz de numeros complejos 
-	 * @return prodTensor resultado de la operación realizada
+	 * @return prodTensor resultado de la operacion realizada
 	 */
 	
 	public MatrizComplejo productoTensor(MatrizComplejo m1, MatrizComplejo m2) {
