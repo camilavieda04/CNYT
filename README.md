@@ -34,13 +34,37 @@ Para probar esta libreria con diferentes casos es necesario tener en cuenta los 
 # Version 1
 
 - Suma de números complejos: La suma de dos números complejos es un número complejo cuya parte real es la suma de las partes reales y cuya parte imaginaria es la suma de las partes imaginarias.
+  ### Ejemplo
+   sumarComplejos((3,-6),(-8,5))
+ 
 - Producto de  números complejos: Para multiplicar números complejos se aplica la propiedad distributiva sobre la primera parte del primer número complejo sobre el otro número complejo, el resultado es otro número complejo.
+  ### Ejemplo
+   ProductoComplejos((3,-6),(-8,5))
+  
 - Resta de  números complejos: La diferencia de dos numeros complejos es otro número complejo tal que su parte real es la diferencia de las partes reales y la parte imaginaria es la diferencia de las partes imaginarias.
+  ### Ejemplo
+    restarComplejos((3,-6),(-8,5))
+
 - Division de números complejos: Se define la división de dos números complejos a través de la multiplicación por el inverso. 
+  ### Ejemplo
+    DividirComplejos((3,-6),(-8,5))
+
 - Módulo de números complejos: Se define como la raíz cuadrada de la suma de los cuadrados de la parte entera y la parte imaginaria.
+  ### Ejemplo 
+    moduloComplejo(3,-6)
+
 - Conjugado de números complejos: El conjugado de un número complejo se obtiene cambiando el signo de su componente imaginaria. 
+  ### Ejemplo
+    conjugadoComplejo(3,-6)
+
 - Conversión entre representaciones polar y cartesiano de números complejos: La forma polar de un número complejo es otra forma de representar un número complejo consta de dos componentes: módulo y argumento. La forma cartesiana de un número complejo esta conformada por una parte real y otra imaginaria.
+  ### Ejemplo
+    cartesianoApolar(3,-6)
+
 - Retornar la fase de un número complejo la cual me indicará su posición o ángulo.
+  ### Ejemplo
+    faseComplejo(3,-6)
+
 
 ### Implementacion de la Version 1
 
@@ -48,20 +72,118 @@ Esta libreria de operaciones entre números complejos fue desarrollada en Java, 
 
 # Version 2
 - Adicion de vectores complejos: La suma de dos vectores complejos es un vector complejo cuya parte real es la suma de las partes reales y cuya parte imaginaria la suma de las partes imaginarias.
+  ### Ejemplo
+     v1 = [3,2,1]
+     
+     v2 = [5,4,2]
+     
+     sumaVectores(v1,v2)
+ 
 - Inversa de vectores complejos: Si el vector V pertenece a un espacio vectorial O debe existir un vector -V en O, tal que V + (-V) = 0.
+   ### Ejemplo
+      v1 = [3,2,1]
+      
+      inversa(v1)
+  
 - Multiplicacion escalar de vectores complejos: Es una aplicacion cuyo dominio es V^2 y su codominio es K, donde  V es un espacio vectorial y K es un conjunto de los escalares respectivos. 
+  ### Ejemplo
+    v1 = [3,2,1]
+    
+    a = (3,1)
+    
+    productoEscalarMatriz(a,v1)
+  
 - Adicion de matrices complejas: La matriz suma se obtiene sumando los elementos de las dos matrices que ocupan la misma posición.
-- Inversa de matrices complejas: Una matriz cuadrada A de orden n se dice que es invertible si existe otra matriz cuadrada de orden n, tal que A * A^-1 = A^-1 * A = In.
-- Multiplicación escalar de matrices complejas : Un numero complejo c, y una matriz de complejos A es la atriz cA. Cada elemento de la matriz cA es c veces su elemento correspondiente en A.
-- Multiplicación entre matrices complejas: Dos matrices A y B son multiplicables si el numero de columnas de A coincide con el número de filas de B. Cada elemento cij de la matriz producto se obtiene multiplicando cada elemento de la fila i de la matriz A por cada elemento de la columna j de la matriz B y sumándolos.
-- Matriz Transpuesta: La transpuesta de una matriz A se denota como A^T y se obtiene a partir del cambio de sus filas por sus columnas o viceversa.
-- Matriz Conjugada: Es el resultado de la sustitución de los elementos de una matriz A por sus conjugados. Es decir, la parte imaginaria de cada uno de los elementos de la matriz cambia su signo.
-- Matriz Adjunta: Se obtiene tomando el complejo conjugado de cada uno de sus elementos y despues permutando filas por columnas o viceversa en la matriz. 
-- Norma de matrices: Para cada espacio de producto interno V, <-,-> podemos definir una norma o longitud tal que | | : V --> R definida como |V| = sqrt(<V,V>).
-- Distancia entre matrices: Siendo A y B dos matrices de números complejos y la funcion trace() como la suma de la diagonal de cada una de las matrices, la distancia se define como sqrt(trace((A-B)*(A-B´))).
-- Matriz Unitaria: Es una matriz compleja U de nxn elementos, que satisface la siguiente condición: U*U = U*U^* = In. Siendo In la matriz identidad y U^* la matriz adjunta. 
-- Matriz Hermitiana: Es una matriz cuadrada de elementos complejos que tiene la caracteristica de ser igual a su propia adjunta. 
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    m2 = [[[8,-9],[-1,2]],[[8,5],[3,1]]
+    
+    sumaMatrizComplejo(m1,m2)
 
+- Inversa de matrices complejas: Una matriz cuadrada A de orden n se dice que es invertible si existe otra matriz cuadrada de orden n, tal que A * A^-1 = A^-1 * A = In.
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    inversa(m1)
+
+- Multiplicación escalar de matrices complejas : Un numero complejo c, y una matriz de complejos A es la atriz cA. Cada elemento de la matriz cA es c veces su elemento correspondiente en A.
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    a = (3,1)
+    
+    productoEscalarMatriz(a,m1)
+
+- Multiplicación entre matrices complejas: Dos matrices A y B son multiplicables si el numero de columnas de A coincide con el número de filas de B. Cada elemento cij de la matriz producto se obtiene multiplicando cada elemento de la fila i de la matriz A por cada elemento de la columna j de la matriz B y sumándolos.
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    m2 = [[[8,-9],[-1,2]],[[8,5],[3,1]]
+    
+    multiplicacionMatrices(m1,m2)
+
+- Matriz Transpuesta: La transpuesta de una matriz A se denota como A^T y se obtiene a partir del cambio de sus filas por sus columnas o viceversa.
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    transpuesta(m1)
+  
+- Matriz Conjugada: Es el resultado de la sustitución de los elementos de una matriz A por sus conjugados. Es decir, la parte imaginaria de cada uno de los elementos de la matriz cambia su signo.
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    conjugada(m1)
+  
+- Matriz Adjunta: Se obtiene tomando el complejo conjugado de cada uno de sus elementos y despues permutando filas por columnas o viceversa en la matriz. 
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    adjunta(m1)
+
+- Norma de matrices: Para cada espacio de producto interno V, <-,-> podemos definir una norma o longitud tal que | | : V --> R definida como |V| = sqrt(<V,V>).
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    normaMatriz(m1)
+  
+- Distancia entre matrices: Siendo A y B dos matrices de números complejos y la funcion trace() como la suma de la diagonal de cada una de las matrices, la distancia se define como sqrt(trace((A-B)*(A-B´))).
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    m2 = [[[8,-9],[-1,2]],[[8,5],[3,1]]
+    
+    distanciaMatriz(m1,m2)
+
+- Matriz Unitaria: Es una matriz compleja U de nxn elementos, que satisface la siguiente condición: U*U = U*U^* = In. Siendo In la matriz identidad y U^* la matriz adjunta. 
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    Unitaria(m1)
+    
+- Matriz Hermitiana: Es una matriz cuadrada de elementos complejos que tiene la caracteristica de ser igual a su propia adjunta. 
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    Hermitiana(m1)
+
+- Producto Tensor: Recibe dos matrices con una parte real y una imaginaria y retorna el producto tensor.
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    m2 = [[[8,-9],[-1,2]],[[8,5],[3,1]]
+    
+    productoTensor(m1,m2)
+    
+- Producto Interno: Dada una matriz se devuelve como resultado su producto interno 
+  ### Ejemplo
+    m1 = [[[3,2],[5,-2]],[[4,2],[8,4]]]
+    
+    m2 = [[[8,-9],[-1,2]],[[8,5],[3,1]]
+    
+    productoInterno(m1,m2)
+      
+  
 ### Implementación de la Version 2 
 
 En esta libreria de operaciones entre matrices complejas, se desarrollaron dos clases principales una llamada LibreriaMatrizComplejo donde encontramos todas las operaciones que se nombraron anteriormente entre matrices complejas. Y otra clase llamada MatrizComplejo en donde estan los métodos básicos que se necesitan para desarrollar nuestro programa. 
