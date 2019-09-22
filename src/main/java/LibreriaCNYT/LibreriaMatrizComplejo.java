@@ -153,7 +153,7 @@ public class LibreriaMatrizComplejo {
 	 * @param m2 matriz de numeros complejos a multiplicar
 	 * @return multi resultado de la operacion realizada.
 	 */
-	public MatrizComplejo multiplicacionMatrices(MatrizComplejo m1, MatrizComplejo m2) {
+	public static MatrizComplejo multiplicacionMatrices(MatrizComplejo m1, MatrizComplejo m2) {
 		MatrizComplejo multi = new MatrizComplejo(m1.getColumna(),m2.getFila());
 		if(m1.getFila()==m2.getColumna()) {
 		for(int i=0; i<m1.getColumna();i++) {
