@@ -189,4 +189,42 @@ Esta libreria de operaciones entre números complejos fue desarrollada en Java, 
 En esta libreria de operaciones entre matrices complejas, se desarrollaron dos clases principales una llamada LibreriaMatrizComplejo donde encontramos todas las operaciones que se nombraron anteriormente entre matrices complejas. Y otra clase llamada MatrizComplejo en donde estan los métodos básicos que se necesitan para desarrollar nuestro programa. 
 
 
+# Version 3
+  - Calcular el estado del sistema despues de n clicks. En este programa el usuario tiene permitido ingresar una matriz booleana en donde describe la forma en la que se mueven las canicas, puede ingresar el estado inicial de cuantas canicas hay en la matriz y tambien puede ingresar el numero de clicks en el que desea ver el estado final del sistema. 
+  ### Ejemplo
+    m1 = [[[0,0],[0,0]],[[1,0],[0,1]]]
+
+    m2 = [[[6,0],[2,0]],[[1,0],[5,0]]]
+    
+    clicks = 2
+    
+    program311(m1,m2,clicks)
+    
+  -  Calcular el estado del sistema despues de n clicks. En este programa el usuario tiene permitido ingresar una matriz de fracciones en donde describe la forma en la que se mueven las canicas, puede ingresar el estado inicial de cuantas canicas hay en la matriz y tambien puede ingresar el numero de clicks en el que desea ver el estado final del sistema.
+  
+  ### Ejemplo
+    m1= [[[0,0],[0.5,0]],[[0.5,0],[0,0]]]
+
+    m2= [[[1,0],[0,0]],[[0,0],[0,0]]]
+
+    clicks = 2
+
+    program311(m1,m2,clicks)
+  
+  -Calcula la matriz resultante del experimento. En este programa el usuario tiene permitido ingresar el numero de rendijas, el numero de blancos u objetivos y las probabilidades de que la bala se mueva de cada ranura a cada uno de los blancos.
+  
+  ### Ejemplo
+    r = 2
+    b = 2
+    program321(r,b)
+
+
+  
+  
+    
+    
+
+  
+  
+
 
