@@ -211,7 +211,7 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
 
     program311(m1,m2,clicks)
   
-  -Calcula la matriz resultante del experimento. En este programa el usuario tiene permitido ingresar el numero de rendijas, el numero de blancos u objetivos y las probabilidades de que la bala se mueva de cada ranura a cada uno de los blancos.
+  - Calcula la matriz resultante del experimento. En este programa el usuario tiene permitido ingresar el numero de rendijas, el numero de blancos u objetivos y las probabilidades de que la bala se mueva de cada ranura a cada uno de los blancos.
   
   ### Ejemplo
     r = 2
