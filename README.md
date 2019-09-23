@@ -264,6 +264,9 @@ Este experimento ha sido uno de los mejores en la física cuántica. Consiste en
   ![exp11](https://user-images.githubusercontent.com/48154086/65465277-6fa6cc00-de21-11e9-9487-756551e42204.jpg)
   ![exp9](https://user-images.githubusercontent.com/48154086/65465274-6fa6cc00-de21-11e9-885c-dc60fde96470.jpg)
   
+  
+  ### Video Doble Rendija 
+  
   <a href="https://youtu.be/FM4rYew_SzE"> Video de Experimento de Doble Rendija </a>
   
 
