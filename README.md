@@ -255,7 +255,8 @@ Este experimento ha sido uno de los mejores en la física cuántica. Consiste en
     ![exp7](https://user-images.githubusercontent.com/48154086/65465272-6fa6cc00-de21-11e9-8594-185819a114e3.jpg)
  
   6. Colocamos la cartulina negra como pantalla, para visualizar el patrón que se forma.
-   ![exp7](https://user-images.githubusercontent.com/48154086/65465272-6fa6cc00-de21-11e9-8594-185819a114e3.jpg)
+   ![exp6](https://user-images.githubusercontent.com/48154086/65470691-dd5af400-de31-11e9-85ea-752522d4c317.jpg)
+
    
   7. Finalmente prendemos el laser y obtenemos el siguiente resultado:
   
