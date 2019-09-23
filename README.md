@@ -223,6 +223,10 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
  
 Este experimento ha sido uno de los mejores en la física cuántica. Consiste en lanzar fotones o electrones de uno en uno hacia una pantalla, entre la pantalla y el laser hay una lámina con dos rendijas. Intuitivamente pensaríamos que las partículas pasarán por cada una de las dos rendijas y que veriamos dos lineas verticales por cada una de las rendijas, pero forma un montón de rendijas. 
 
+  ### Explicación 
+  Este experimento demostró que las particulas cuánticas se comportan como ondas y partículas al mismo tiempo por lo que la       interpretación del experimento es que la partícula cuántica pasa por las 2 rendijas a la vez e interfiere consigo misma,         creando el patrón de interferencia. Al comenzar el experimento los electrones se distribuirán por la rendija de una forma       aparentemente aleatoria, pero al incrementar el número de impactos veremos cómo va formandose el patrón de interferencia. 
+  
+
   ### Procedimiento de Elaboración
   1. Utilizamos los siguientes elementos para la elaboración del montaje: 
       - Laser
@@ -259,7 +263,13 @@ Este experimento ha sido uno de los mejores en la física cuántica. Consiste en
   ![exp11](https://user-images.githubusercontent.com/48154086/65465277-6fa6cc00-de21-11e9-9487-756551e42204.jpg)
   ![exp9](https://user-images.githubusercontent.com/48154086/65465274-6fa6cc00-de21-11e9-885c-dc60fde96470.jpg)
   
-  ### Demostración usando Librería 
+  <a href="https://youtu.be/FM4rYew_SzE"> Video de Experimento de Doble Rendija </a>
+  
+
+  
+  
+  
+  
   
   
     
