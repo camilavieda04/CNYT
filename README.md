@@ -223,7 +223,7 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
  
 Este experimento ha sido uno de los mejores en la física cuántica. Consiste en lanzar fotones o electrones de uno en uno hacia una pantalla, entre la pantalla y el laser hay una lámina con dos rendijas. Intuitivamente pensaríamos que las partículas pasarán por cada una de las dos rendijas y que veriamos dos lineas verticales por cada una de las rendijas, pero forma un montón de rendijas. 
 
-  ### Procedimiento 
+  ### Procedimiento de Elaboración
   1. Utilizamos los siguientes elementos para la elaboración del montaje: 
       - Laser
       - Aluminio
@@ -233,6 +233,39 @@ Este experimento ha sido uno de los mejores en la física cuántica. Consiste en
       - Bisturí 
       - Cartón 
       - Cinta 
+      - Cartulina Negra 
+      
+      ![exp1](https://user-images.githubusercontent.com/48154086/65465266-6f0e3580-de21-11e9-9059-c69144aadbdc.jpg) 
+      
+  2. Realizamos dos cortes paralelos en las laminas de aluminio las cuales serán las rendijas y pegamos las laminas en la hoja        blanca.
+      
+     ![exp2](https://user-images.githubusercontent.com/48154086/65465267-6f0e3580-de21-11e9-9963-287dea9f32fc.jpg)
+  
+  3. Tomamos el palo de balso y lo partimos en cuatro pedazos para realizar una base donde se sostendra la hoja blanca con las        rendijas realizadas anteriormente. Y pegamos la base al carton. 
+  
+  
+  4. Utilizamos una caja de madera junto con un pedazo del palo de balso como soporte para el laser. 
+    ![exp4](https://user-images.githubusercontent.com/48154086/65465269-6f0e3580-de21-11e9-9221-ab31392a42ba.jpg)
+    
+  5. De igual forma pegamos el soporte hecho anteriormente al cartón.
+    ![exp7](https://user-images.githubusercontent.com/48154086/65465272-6fa6cc00-de21-11e9-8594-185819a114e3.jpg)
+ 
+  6. Colocamos la cartulina negra como pantalla, para visualizar el patrón que se forma.
+   ![exp7](https://user-images.githubusercontent.com/48154086/65465272-6fa6cc00-de21-11e9-8594-185819a114e3.jpg)
+   
+  7. Finalmente prendemos el laser y obtenemos el siguiente resultado:
+  
+  ![exp10](https://user-images.githubusercontent.com/48154086/65465276-6fa6cc00-de21-11e9-8d45-502430bbe1e0.jpg)
+  ![exp11](https://user-images.githubusercontent.com/48154086/65465277-6fa6cc00-de21-11e9-9487-756551e42204.jpg)
+  ![exp9](https://user-images.githubusercontent.com/48154086/65465274-6fa6cc00-de21-11e9-885c-dc60fde96470.jpg)
+  
+  ### Demostración usando Librería 
+  
+  
+    
+    
+  
+  
   
    
     
