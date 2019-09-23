@@ -217,6 +217,30 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
     r = 2
     b = 2
     program321(r,b)
+  
+  
+ # Experimento de la Doble Rendija: <a href="https://github.com/julianagarzond"> Juliana Garzón Duque </a>
+ 
+Este experimento ha sido uno de los mejores en la física cuántica. Consiste en lanzar fotones o electrones de uno en uno hacia una pantalla, entre la pantalla y el laser hay una lámina con dos rendijas. Intuitivamente pensaríamos que las partículas pasarán por cada una de las dos rendijas y que veriamos dos lineas verticales por cada una de las rendijas, pero forma un montón de rendijas. 
+
+  ### Procedimiento 
+  1. Utilizamos los siguientes elementos para la elaboración del montaje: 
+      - Laser
+      - Aluminio
+      - Hoja de Papel
+      - 1 Palo de Balso 
+      - Silicona
+      - Bisturí 
+      - Cartón 
+      - Cinta 
+  
+   
+    
+
+  
+  
+  
+
 
 
   
