@@ -1,12 +1,6 @@
 package LibreriaCNYT;
-
-
-
 public class SimuladorCaC {
-	
-	
 
-	
 	/**
 	 * Calcula el estado del sistema despues de n clicks.
 	 * @param m1 matriz booleana que describe los caminos de las canicas
