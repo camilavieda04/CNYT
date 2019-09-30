@@ -233,7 +233,7 @@ public class LibreriaMatrizComplejo {
 	 * @return norma numero de tipo double que retorna la norma de una matriz m1 dada
 	 */
 	
-	public double normaMatriz(MatrizComplejo m1) {
+	public static double normaMatriz(MatrizComplejo m1) {
 		double a=0.0;
 		for(int i=0;i<m1.getFila();i++) {
 			for(int j=0;j<m1.getColumna();j++) {
@@ -348,7 +348,7 @@ public class LibreriaMatrizComplejo {
 		return prodTensor;
 	}
 	
-	
+
 	
 	
 	

@@ -227,6 +227,55 @@ public class PruebasSimuladorTest {
 		
 	}
 	
+
+	@Test
+	public void probabilidadPuntoX() {
+		SimuladorCaC s = new SimuladorCaC();
+		System.out.println("Prueba 4.1.1 ");
+		MatrizComplejo m = new MatrizComplejo(4,1);
+		m.addComplejo(new Complejo(-3,-1), 0, 0);
+		m.addComplejo(new Complejo(0,-2), 1, 0);
+		m.addComplejo(new Complejo(0,1), 2, 0);
+		m.addComplejo(new Complejo(2,0), 3, 0);
+		
+		MatrizComplejo m1 = new MatrizComplejo(4,1);
+		m1.addComplejo(new Complejo(0.5263157894736842,0), 0, 0);
+		m1.addComplejo(new Complejo(0.21052631578947364,0), 1, 0);
+		m1.addComplejo(new Complejo(0.05263157894736841,0), 2, 0);
+		m1.addComplejo(new Complejo(0.21052631578947364,0), 3, 0);
+		
+		System.out.println("Ket");
+		System.out.println(m);
+		int p = 2;
+		System.out.println("Posicion en la que se desea calcular la probabilidad: "+p);
+		System.out.println("Resultado esperada: "+ m1.getMatrizCompl()[p][0].getReal());
+		System.out.println("Resultado obtenido: "+s.calcularProbParticulaxPos(p, m));
+		assertEquals(m1.getMatrizCompl()[p][0].getReal(),s.calcularProbParticulaxPos(p, m),1);
+		
+	}
+	
+	@Test 
+	public void probabilidadTransitarKetAKet() {
+		SimuladorCaC s = new SimuladorCaC();
+		MatrizComplejo m = new MatrizComplejo(2,1);
+		m.addComplejo(new Complejo(Math.sqrt(2)/2,0),0 ,0);
+		m.addComplejo(new Complejo(0,Math.sqrt(2)/2),1 ,0);
+		
+		MatrizComplejo m1 = new MatrizComplejo(2,1);
+		m1.addComplejo(new Complejo(0,Math.sqrt(2)/2),0 ,0);
+		m1.addComplejo(new Complejo(-Math.sqrt(2)/2,0),1 ,0);
+		
+		System.out.println("Ket 1");
+		System.out.println(m);
+		System.out.println("Ket 2");
+		System.out.println(m1);
+		System.out.println("Resultado esperado");
+		Complejo resp = new Complejo(0,-1);
+		System.out.println(resp);
+		System.out.println("Respuesta Obtenida");
+		System.out.println(s.probabilidadKetAKet(m, m1));
+		resp.equals(s.probabilidadKetAKet(m, m1));
+	}
 	
 	
 		
