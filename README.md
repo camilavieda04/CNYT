@@ -211,12 +211,25 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
 
     program311(m1,m2,clicks)
   
-  - Calcula la matriz resultante del experimento. En este programa el usuario tiene permitido ingresar el numero de rendijas, el numero de blancos u objetivos y las probabilidades de que la bala se mueva de cada ranura a cada uno de los blancos.
+  - Calcula la matriz resultante del experimento de multiples rendijas. En este programa el usuario tiene permitido ingresar el numero de rendijas, el numero de blancos u objetivos y las probabilidades de que la bala se mueva de cada ranura a cada uno de los blancos.
   
   ### Ejemplo
     r = 2
     b = 2
     program321(r,b)
+    
+ - Calcula la matriz de probabilidades de cada posicion del ket
+   ### Ejemplo
+        m1 = [[[-3,-1],[0,-2]],[[0,1],[2,0]]]
+        numPos = 2
+        calcularProbParticulaxPos(2,m1)
+   
+ - Calcula la probabilidad de transitar de un vector ket a otro
+   ### Ejemplo
+        m1 = [[[0.7,0]],[[0,0.7]]]
+        m2 = [[[0,0.7],[[-0.7,0]]]
+        probabilidadKetAKet(m1,m2)
+ 
   
   
  # Experimento de la Doble Rendija: <a href="https://github.com/julianagarzond"> Con la colaboracion de Juliana Garzón Duque </a>
