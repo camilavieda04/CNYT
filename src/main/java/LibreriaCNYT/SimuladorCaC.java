@@ -1,4 +1,7 @@
 package LibreriaCNYT;
+
+import java.util.ArrayList;
+
 public class SimuladorCaC {
 
 	/**
@@ -87,13 +90,103 @@ public class SimuladorCaC {
 		 * Metodo que calcula la probabilidad de transitar de un ket a otro
 		 * @param k1
 		 * @param k2
-		 * @return resp
+		 * @return
 		 */
 		
 		public Complejo probabilidadKetAKet(MatrizComplejo k1, MatrizComplejo k2) {
 			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
 			return m.productoInterno(k1, k2);
 		}
-	
+		
+		/**
+		 * Metodo que calcula el bra de un vector ket
+		 * @param k
+		 * @return 
+		 */
+		public MatrizComplejo calculaBra(MatrizComplejo k) {
+			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
+			return m.adjunta(k);
+		}
+		
+		/**
+		 * Metodo que revisa que la matriz sea hermitiana y si lo es, calcula la media
+		 @param obs
+		 @param k
+		 @return vmedio
+		 */
+		public Complejo calculaValorMedio(MatrizComplejo obs, MatrizComplejo k) {
+			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
+			if (m.Hermitiana(obs).equals(false)) {
+				System.out.println("La matriz observable debe ser Hermitiana");
+			}
+			m.adjunta(obs);
+			MatrizComplejo x = m.multiplicacionMatrices(obs,k);
+			this.calculaBra(x);
+			Complejo vmedio = m.productoInterno(x, k);
+			return vmedio;
+		}
+		
+		/**
+		 * Metodo que revisa que la matriz sea hermitiana y si lo es, calcula la varianza
+		 @param obs
+		 @param k
+		 @return varianza
+		 */
+		public Complejo calculaVarianza(MatrizComplejo obs, MatrizComplejo k) {
+			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
+			if (m.Hermitiana(obs).equals(false)) {
+				System.out.println("La matriz observable debe ser Hermitiana");
+			}
+			m.adjunta(obs);
+			MatrizComplejo un = this.unitariaConUnValor(this.calculaValorMedio(obs, k), obs.getColumna(), obs.getFila());
+			MatrizComplejo resp = m.restaMatrizComplejos(obs, un);
+			MatrizComplejo resp1 = m.multiplicacionMatrices(resp, resp);
+			MatrizComplejo resp2 = m.multiplicacionMatrices(m.adjunta(k), resp1);
+			Complejo varianza = m.productoInterno(resp2, m.adjunta(k));
+			
+			return varianza;
+		}
+		
+		
+		/**
+		 * Metodo que genera una matriz unitaria respecto a un valor ingresado
+		 * @param v 
+		 * @param m
+		 * @param n
+		 * @return MatrizU
+		 */
+		
+		public MatrizComplejo unitariaConUnValor(Complejo v, int m, int n) {
+			MatrizComplejo MatrizU = new MatrizComplejo(m,n);
+			for(int i=0; i<MatrizU.getColumna();i++) {
+				for(int j=0; j<MatrizU.getFila();j++) {
+					if(i==j) {
+						MatrizU.getMatrizCompl()[i][j]=v;
+					}
+					else {
+						MatrizU.getMatrizCompl()[i][j]= new Complejo(0,0);
+					}
+				}
+			}
+			return MatrizU;
+		}
+		
+		/**
+		 * Metodo que calcula la dinamica del sistema, a partir de un estado inicial
+		 * @param t
+		 * @param k
+		 * @param s
+		 * @return estadoF
+		 */
+		public MatrizComplejo dinamicaSistema(int t, MatrizComplejo k, ArrayList<MatrizComplejo> s) {
+			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
+			MatrizComplejo estadoF = k;
+			for(int i=0; i<t;i++) {
+				estadoF = m.multiplicacionMatrices(s.get(i), estadoF);
+			}
+			return estadoF;
+		}
+		
+		
 
 }

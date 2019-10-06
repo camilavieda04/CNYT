@@ -277,7 +277,11 @@ public class PruebasSimuladorTest {
 		resp.equals(s.probabilidadKetAKet(m, m1));
 	}
 	
-	
+	@Test
+	public void calculandoValorMedio() {
+		SimuladorCaC s = new SimuladorCaC();
+		System.out.println();
+	}
 		
 
 }
