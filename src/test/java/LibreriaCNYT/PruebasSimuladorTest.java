@@ -280,8 +280,108 @@ public class PruebasSimuladorTest {
 	@Test
 	public void calculandoValorMedio() {
 		SimuladorCaC s = new SimuladorCaC();
-		System.out.println();
-	}
+		System.out.println(" Prueba calcular el valor medio: ");
 		
+		MatrizComplejo m = new MatrizComplejo(2,1);
+		m.addComplejo(new Complejo(Math.sqrt(2)/2,0),0 ,0);
+		m.addComplejo(new Complejo(0,Math.sqrt(2)/2),1 ,0);
+		System.out.println(" Vector:  ");
+		System.out.println(m);
+		
+		MatrizComplejo m1 = new MatrizComplejo(2,2);
+		m1.addComplejo(new Complejo(1,0),0 ,0);
+		m1.addComplejo(new Complejo(0,1),1 ,0);
+		m1.addComplejo(new Complejo(0,-1),0 ,1);
+		m1.addComplejo(new Complejo(2,0),1 ,1);
+		
+		Complejo resp = new Complejo(2.5000000000000004,0);
+		System.out.println("Observable");
+		System.out.println(m1);
+		
+		System.out.println("Resultado esperado: ");
+		System.out.println(resp);
+		System.out.println("Resultado obtenido: ");
+		System.out.println(s.calculaValorMedio(m1, m));
+		assertEquals(resp,s.calculaValorMedio(m1, m));
+	}
+	
+	@Test
+	public void calculandoVarianza() {
+		SimuladorCaC s = new SimuladorCaC();
+		System.out.println(" Prueba calcular la varianza: ");
+		
+		MatrizComplejo m = new MatrizComplejo(2,1);
+		m.addComplejo(new Complejo(Math.sqrt(2)/2,0),0 ,0);
+		m.addComplejo(new Complejo(0,Math.sqrt(2)/2),1 ,0);
+		System.out.println(" Vector:  ");
+		System.out.println(m);
+		
+		MatrizComplejo m1 = new MatrizComplejo(2,2);
+		m1.addComplejo(new Complejo(1,0),0 ,0);
+		m1.addComplejo(new Complejo(0,1),1 ,0);
+		m1.addComplejo(new Complejo(0,-1),0 ,1);
+		m1.addComplejo(new Complejo(2,0),1 ,1);
+		
+		System.out.println("Observable");
+		System.out.println(m1);
+		Complejo resp = new Complejo(0.25,0);
+		
+		
+		System.out.println("Resultado esperado: ");
+		System.out.println(resp);
+		System.out.println("Resultado obtenido: ");
+		System.out.println(s.calculaVarianza(m1, m));
+		assertEquals(resp,s.calculaVarianza(m1, m));
+	
+		
+	}	
+	
+	@Test
+	public void calculaDinamicaSistema() {
+		SimuladorCaC s = new SimuladorCaC();
+		LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
+		System.out.println(" Prueba calcular dinamica del sistema: ");
+		
+		
+		MatrizComplejo m1 = new MatrizComplejo(2,1);
+		m1.addComplejo(new Complejo(1,0),0,0);
+		m1.addComplejo(new Complejo(0,0),1,0);
+		System.out.println("Vector ket: ");
+		System.out.println(m1);
+		
+		
+		MatrizComplejo m2 = new MatrizComplejo(2,2);
+		m2.addComplejo(new Complejo(0,0),0,0);
+		m2.addComplejo(new Complejo(1,0),1,0);
+		m2.addComplejo(new Complejo(1,0),0,1);
+		m2.addComplejo(new Complejo(0,0),1,1);
+		
+		MatrizComplejo m3 = new MatrizComplejo(2,2);
+		m3.addComplejo(new Complejo(0,0),0,0);
+		m3.addComplejo(new Complejo(1,0),1,0);
+		m3.addComplejo(new Complejo(1,0),0,1);
+		m3.addComplejo(new Complejo(0,0),1,1);
+		
+		ArrayList<MatrizComplejo>  resp = new ArrayList<MatrizComplejo>();
+		resp.add(m2);
+		resp.add(m3);
+		
+		System.out.println("Respuestas");
+		System.out.println(resp);
+		
+
+		MatrizComplejo m4 = m.multiplicacionMatrices(m2, m1);
+		MatrizComplejo m5 = m.multiplicacionMatrices(m3, m4);
+		System.out.println("Resultado esperado: ");
+		System.out.println(m4);
+		System.out.println(m5);
+		System.out.println(s.dinamicaSistema(2, m1, resp));
+		assertEquals(m5,s.dinamicaSistema(2, m1, resp));
+		
+		
+		
+		
+	}
+	
 
 }

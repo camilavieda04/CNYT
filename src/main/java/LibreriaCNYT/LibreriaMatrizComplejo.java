@@ -293,7 +293,7 @@ public class LibreriaMatrizComplejo {
 	 * @param m1 matriz de numeros complejos 
 	 * @return boolean que identifica si es hermitiana o no
 	 */
-	public Boolean Hermitiana(MatrizComplejo m1) {
+	public  Boolean Hermitiana(MatrizComplejo m1) {
 		Boolean h = false;
 		if(adjunta(m1).equals(m1)) {
 			h=true;

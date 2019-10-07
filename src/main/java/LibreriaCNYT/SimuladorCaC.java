@@ -3,6 +3,9 @@ package LibreriaCNYT;
 import java.util.ArrayList;
 
 public class SimuladorCaC {
+	
+	LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
+	
 
 	/**
 	 * Calcula el estado del sistema despues de n clicks.
@@ -81,7 +84,6 @@ public class SimuladorCaC {
 	
 		
 		public double calcularProbParticulaxPos(int numPos, MatrizComplejo ket) {
-			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
 			double probabilidad = Math.pow(ket.getMatrizCompl()[numPos][0].getModulo(), 2)/Math.pow(m.normaMatriz(ket), 2);
 			return probabilidad;
 		}
@@ -94,7 +96,6 @@ public class SimuladorCaC {
 		 */
 		
 		public Complejo probabilidadKetAKet(MatrizComplejo k1, MatrizComplejo k2) {
-			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
 			return m.productoInterno(k1, k2);
 		}
 		
@@ -104,7 +105,6 @@ public class SimuladorCaC {
 		 * @return 
 		 */
 		public MatrizComplejo calculaBra(MatrizComplejo k) {
-			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
 			return m.adjunta(k);
 		}
 		
@@ -112,18 +112,16 @@ public class SimuladorCaC {
 		 * Metodo que revisa que la matriz sea hermitiana y si lo es, calcula la media
 		 @param obs
 		 @param k
-		 @return vmedio
+		 @return 
 		 */
 		public Complejo calculaValorMedio(MatrizComplejo obs, MatrizComplejo k) {
-			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
 			if (m.Hermitiana(obs).equals(false)) {
-				System.out.println("La matriz observable debe ser Hermitiana");
+				return null;
 			}
 			m.adjunta(obs);
 			MatrizComplejo x = m.multiplicacionMatrices(obs,k);
 			this.calculaBra(x);
-			Complejo vmedio = m.productoInterno(x, k);
-			return vmedio;
+			return m.productoInterno(x, k);
 		}
 		
 		/**
@@ -133,7 +131,7 @@ public class SimuladorCaC {
 		 @return varianza
 		 */
 		public Complejo calculaVarianza(MatrizComplejo obs, MatrizComplejo k) {
-			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
+			
 			if (m.Hermitiana(obs).equals(false)) {
 				System.out.println("La matriz observable debe ser Hermitiana");
 			}
