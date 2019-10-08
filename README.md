@@ -229,7 +229,27 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
         m1 = [[[0.7,0]],[[0,0.7]]]
         m2 = [[[0,0.7],[[-0.7,0]]]
         probabilidadKetAKet(m1,m2)
+        
+ - Calcula el valor medio de la matriz hermitiana
  
+   ### Ejemplo 
+       k = [[[sqrt(2)/2,0]],[[0,sqrt(2)/2]]]
+       obs = [[[1,0],[0,1]],[[0,-1],[2,0]]]
+       calcularValorMedio(obs,k)
+       
+ - Calcula la Varianza de la matriz hermitiana
+    ### Ejemplo 
+      k = [[[sqrt(2)/2,0]],[[0,sqrt(2)/2]]]
+      obs = [[[1,0],[0,1]],[[0,-1],[2,0]]]
+      calcularVarianza(obs,k)
+ 
+ - Calcula la dinámica del sistema, a partir de un estado inicial 
+   ### Ejemplo
+     t = 2
+     k = [[[1,0]],[[0,0]]]
+     s = [[[0,0],[1,0]],[[1,0],[0,0]]]
+     dinamicaSistema(2,k,s)
+     
   
   
  # Experimento de la Doble Rendija: <a href="https://github.com/julianagarzond"> Con la colaboracion de Juliana Garzón Duque </a>
