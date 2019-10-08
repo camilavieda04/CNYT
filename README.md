@@ -239,16 +239,16 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
        
  - Calcula la Varianza de la matriz hermitiana
     ### Ejemplo 
-      k = [[[sqrt(2)/2,0]],[[0,sqrt(2)/2]]]
-      obs = [[[1,0],[0,1]],[[0,-1],[2,0]]]
-      calcularVarianza(obs,k)
+        k = [[[sqrt(2)/2,0]],[[0,sqrt(2)/2]]]
+        obs = [[[1,0],[0,1]],[[0,-1],[2,0]]]
+        calcularVarianza(obs,k)
  
  - Calcula la dinámica del sistema, a partir de un estado inicial 
    ### Ejemplo
-     t = 2
-     k = [[[1,0]],[[0,0]]]
-     s = [[[0,0],[1,0]],[[1,0],[0,0]]]
-     dinamicaSistema(2,k,s)
+       t = 2
+       k = [[[1,0]],[[0,0]]]
+       s = [[[0,0],[1,0]],[[1,0],[0,0]]]
+       dinamicaSistema(2,k,s)
      
   
   
