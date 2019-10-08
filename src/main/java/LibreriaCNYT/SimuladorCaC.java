@@ -115,9 +115,6 @@ public class SimuladorCaC {
 		 @return 
 		 */
 		public Complejo calculaValorMedio(MatrizComplejo obs, MatrizComplejo k) {
-			if (m.Hermitiana(obs).equals(false)) {
-				return null;
-			}
 			m.adjunta(obs);
 			MatrizComplejo x = m.multiplicacionMatrices(obs,k);
 			this.calculaBra(x);
@@ -131,10 +128,6 @@ public class SimuladorCaC {
 		 @return varianza
 		 */
 		public Complejo calculaVarianza(MatrizComplejo obs, MatrizComplejo k) {
-			
-			if (m.Hermitiana(obs).equals(false)) {
-				System.out.println("La matriz observable debe ser Hermitiana");
-			}
 			m.adjunta(obs);
 			MatrizComplejo un = this.unitariaConUnValor(this.calculaValorMedio(obs, k), obs.getColumna(), obs.getFila());
 			MatrizComplejo resp = m.restaMatrizComplejos(obs, un);
@@ -177,7 +170,7 @@ public class SimuladorCaC {
 		 * @return estadoF
 		 */
 		public MatrizComplejo dinamicaSistema(int t, MatrizComplejo k, ArrayList<MatrizComplejo> s) {
-			LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
+			//LibreriaMatrizComplejo m = new LibreriaMatrizComplejo();
 			MatrizComplejo estadoF = k;
 			for(int i=0; i<t;i++) {
 				estadoF = m.multiplicacionMatrices(s.get(i), estadoF);

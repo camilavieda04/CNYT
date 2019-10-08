@@ -223,10 +223,59 @@ public class PruebasSimuladorTest {
 		m1.addComplejo(new Complejo(0,0), 6, 0);
 		m1.addComplejo(new Complejo(0,0), 7, 0);
 		System.out.println(m1);
-		
+		assertEquals(m1,s.program321(r,b));
 		
 	}
-	
+	/*
+	@Test
+	public void programa331() {
+		System.out.println("Prueba 3.3.1");
+		SimuladorCaC s = new SimuladorCaC();
+		MatrizComplejo m = new MatrizComplejo(4,4);
+		m.addComplejo(new Complejo(0,0), 0, 0);
+		m.addComplejo(new Complejo(0.5,1), 1, 0);
+		m.addComplejo(new Complejo(0.5,1), 2, 0);
+		m.addComplejo(new Complejo(0,0), 3, 0);
+		m.addComplejo(new Complejo(0.5,1), 0, 1);
+		m.addComplejo(new Complejo(0,0), 1, 1);
+		m.addComplejo(new Complejo(0,0), 2, 1);
+		m.addComplejo(new Complejo(-0.5,1), 3, 1);
+		m.addComplejo(new Complejo(0.5,1), 0, 2);
+		m.addComplejo(new Complejo(0,0), 1, 2);
+		m.addComplejo(new Complejo(0,0), 2, 2);
+		m.addComplejo(new Complejo(0.5,1), 3, 2);
+		m.addComplejo(new Complejo(0,0), 0, 3);
+		m.addComplejo(new Complejo(-0.5,1), 1, 3);
+		m.addComplejo(new Complejo(0.5,1), 2, 3);
+		m.addComplejo(new Complejo(0,0), 3, 3);
+		
+		System.out.println("Matriz Booleana");
+		System.out.println(m);
+		
+		MatrizComplejo m1 = new MatrizComplejo(4,1);
+		m1.addComplejo(new Complejo(1,1), 0, 0);
+		m1.addComplejo(new Complejo(0,0), 1, 0);
+		m1.addComplejo(new Complejo(0,0), 2, 0);
+		m1.addComplejo(new Complejo(0,0), 3, 0);
+		System.out.println("Canicas");
+		System.out.println(m1);
+		
+		System.out.println("Respuesta A");
+		System.out.println("Un click: ");
+		
+		MatrizComplejo m2 = new MatrizComplejo(4,1);
+		m2.addComplejo(new Complejo(0,0), 0, 0);
+		m2.addComplejo(new Complejo(-0.5,1.5), 1, 0);
+		m2.addComplejo(new Complejo(-0.5,1.5), 2, 0);
+		m2.addComplejo(new Complejo(0,0), 3, 0);
+
+		System.out.println("Respuesta esperada: ");
+		System.out.println(m2);
+		System.out.println("Respuesta obtenida: ");
+		System.out.println(s.program311(m, m1, 1));
+		assertEquals(m2,s.program311(m, m1, 1));
+	}
+	*/
 
 	@Test
 	public void probabilidadPuntoX() {
