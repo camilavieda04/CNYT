@@ -203,10 +203,11 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
     
   ### Prueba
   
-  Los experimentos de la canicas con coeficiente booleanos
-  ![Capture1](https://user-images.githubusercontent.com/48154086/67322661-f7dac880-f4d6-11e9-80e9-05412d493dfc.PNG)
+    Los experimentos de la canicas con coeficiente booleanos
+  
 
-
+   ![Capture1](https://user-images.githubusercontent.com/48154086/67322661-f7dac880-f4d6-11e9-80e9-05412d493dfc.PNG)
+  
   -  Calcular el estado del sistema despues de n clicks. En este programa el usuario tiene permitido ingresar una matriz de fracciones en donde describe la forma en la que se mueven las canicas, puede ingresar el estado inicial de cuantas canicas hay en la matriz y tambien puede ingresar el numero de clicks en el que desea ver el estado final del sistema.
   
   ### Ejemplo
@@ -217,6 +218,12 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
     clicks = 2
 
     program311(m1,m2,clicks)
+   
+  ### Prueba
+  
+    Experimentos de las múltiples rendijas clásico probabilístico, con más de dos rendijas
+   
+   ![Capture2](https://user-images.githubusercontent.com/48154086/67322773-2658a380-f4d7-11e9-8902-71e4fafe49ae.PNG)
  
   - Calcula la matriz resultante del experimento de multiples rendijas. En este programa el usuario tiene permitido ingresar el numero de rendijas, el numero de blancos u objetivos y las probabilidades de que la bala se mueva de cada ranura a cada uno de los blancos.
   
@@ -224,6 +231,12 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
     r = 2
     b = 2
     program321(r,b)
+    
+  ### Prueba
+  
+    Experimento de las múltiples rendijas cuántico.
+  
+   ![Capture3](https://user-images.githubusercontent.com/48154086/67322772-2658a380-f4d7-11e9-8df5-2f511b4d93ec.PNG)
     
  - Calcula la matriz de probabilidades de cada posicion del ket
    ### Ejemplo
