@@ -191,6 +191,7 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
 
 # Version 3
   - Calcular el estado del sistema despues de n clicks. En este programa el usuario tiene permitido ingresar una matriz booleana en donde describe la forma en la que se mueven las canicas, puede ingresar el estado inicial de cuantas canicas hay en la matriz y tambien puede ingresar el numero de clicks en el que desea ver el estado final del sistema. 
+  
   ### Ejemplo
     m1 = [[[0,0],[0,0]],[[1,0],[0,1]]]
 
@@ -200,6 +201,12 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
     
     program311(m1,m2,clicks)
     
+  ### Prueba
+  
+  Los experimentos de la canicas con coeficiente booleanos
+  ![Capture1](https://user-images.githubusercontent.com/48154086/67322661-f7dac880-f4d6-11e9-80e9-05412d493dfc.PNG)
+
+
   -  Calcular el estado del sistema despues de n clicks. En este programa el usuario tiene permitido ingresar una matriz de fracciones en donde describe la forma en la que se mueven las canicas, puede ingresar el estado inicial de cuantas canicas hay en la matriz y tambien puede ingresar el numero de clicks en el que desea ver el estado final del sistema.
   
   ### Ejemplo
@@ -210,7 +217,7 @@ En esta libreria de operaciones entre matrices complejas, se desarrollaron dos c
     clicks = 2
 
     program311(m1,m2,clicks)
-  
+ 
   - Calcula la matriz resultante del experimento de multiples rendijas. En este programa el usuario tiene permitido ingresar el numero de rendijas, el numero de blancos u objetivos y las probabilidades de que la bala se mueva de cada ranura a cada uno de los blancos.
   
   ### Ejemplo
